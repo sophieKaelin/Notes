@@ -7,11 +7,22 @@
 	- Datalink; layer 2 (Error checking and frame synchronisation).
 	- Physical; layer 1 (Bits over fibre).
 	
--	Firewalls
+-	Firewalls ✅
 	- Rules to prevent incoming and outgoing connections.
+	- Can be software or hardware filtration
+	- Packet scanner/filter (removes the dodgy stuff)
+	- Proxy Service: 2 other intermediaries that stops direct contact between customer and client services (slower)
+	- Stateful inspection: checks against more than just the packet header. Cross checks packet data with a trusted db source (ip addr, ports, apps). Newer technique.
 	
 -	NAT 
 	- Useful to understand IPv4 vs IPv6.
+	- Network Address Translation
+	- Used in routers
+	- IPV4 became limited (not enough for all devices). So private IP addresses for networks created
+	- Public vs Private IPV4
+	- Public: 4 billion addresses, used to access internet
+	- Nat translates private IP addresses of all devices on home network into one public IP address
+	- Won't need NAT when we have IPv6
 
 - DNS
 	- (53)
