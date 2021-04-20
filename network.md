@@ -1,11 +1,4 @@
 # Networking 
-
-- OSI Model
-	- Application; layer 7 (and basically layers 5 & 6) (includes API, HTTP, etc).
-	- Transport; layer 4 (TCP/UDP).
-	- Network; layer 3 (Routing).
-	- Datalink; layer 2 (Error checking and frame synchronisation).
-	- Physical; layer 1 (Bits over fibre).
 	
 -	Firewalls ✅
 	- Rules to prevent incoming and outgoing connections.
@@ -21,6 +14,20 @@
 	- IPV4 became limited (not enough for all devices, 4 billion). So private IP addresses for networks created
 	- Nat translates private IP addresses of all devices on home network into one public IP address and vice versa
 	- Won't need NAT when IPv6 works dependably
+
+- HTTP/S ✅
+	- (80, 443)
+	- (application layer, transport layer)
+	- (No SSL certificates required, required SSL Cert signed by a CA)
+	- (domain validation not required, requires at least domain validation and sometimes further)
+	- (No encryption, encrption)
+
+- OSI Model
+	- Application; layer 7 (and basically layers 5 & 6) (includes API, HTTP, etc).
+	- Transport; layer 4 (TCP/UDP).
+	- Network; layer 3 (Routing).
+	- Datalink; layer 2 (Error checking and frame synchronisation).
+	- Physical; layer 1 (Bits over fibre).
 
 - DNS
 	- (53)
@@ -78,10 +85,7 @@
 - Network traffic tools
 	- Wireshark
 	- Tcpdump
-	- Burp suite
-
-- HTTP/S 
-	- (80, 443)
+	- Burp suite ✅
 
 - SSL/TLS
 	- (443) 
