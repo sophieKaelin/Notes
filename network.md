@@ -22,6 +22,18 @@
 	- (domain validation not required, requires at least domain validation and sometimes further)
 	- (No encryption, encrption)
 
+- SSL/TLS
+	- (443)
+	- SSL (Secure Socket Layer): old version of TLS, shouldn't be used (3 at the latest)
+	- TLS (Transport Layer Security): newer version (still some bugs)
+	- handshakes: TODO
+	- encruption: TODO
+	- signing: TODO
+	- Cert Authorities: TODO
+	- Trust systems: TODO
+	- Super important to learn this, includes learning about handshakes, encryption, signing, certificate authorities, trust systems. [A good primer on all these concepts and algorithms](https://english.ncsc.nl/publications/publications/2019/juni/01/it-security-guidelines-for-transport-layer-security-tls) is made available by the Dutch cybersecurity center.
+	- Various attacks against older versions of SSL/TLS (with catchy names) on [Wikipedia](https://en.wikipedia.org/wiki/Transport_Layer_Security#Attacks_against_TLS/SSL).
+
 - OSI Model
 	- Application; layer 7 (and basically layers 5 & 6) (includes API, HTTP, etc).
 	- Transport; layer 4 (TCP/UDP).
@@ -86,11 +98,6 @@
 	- Wireshark
 	- Tcpdump
 	- Burp suite ✅
-
-- SSL/TLS
-	- (443) 
-	- Super important to learn this, includes learning about handshakes, encryption, signing, certificate authorities, trust systems. [A good primer on all these concepts and algorithms](https://english.ncsc.nl/publications/publications/2019/juni/01/it-security-guidelines-for-transport-layer-security-tls) is made available by the Dutch cybersecurity center.
-	- Various attacks against older versions of SSL/TLS (with catchy names) on [Wikipedia](https://en.wikipedia.org/wiki/Transport_Layer_Security#Attacks_against_TLS/SSL).
 
 - TCP/UDP
 	- Web traffic, chat, voip, traceroute.
