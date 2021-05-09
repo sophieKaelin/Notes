@@ -1,9 +1,14 @@
 # OS implementation and systems
 
-- Privilege escalation techniques, and prevention.
-- Buffer Overflows.
-- Directory traversal (prevention).
-- Remote Code Execution / getting shells.
+- Privilege escalation techniques, and prevention. ✅
+	- Look for programs running as root and inject
+	- sudo into privledges 
+- Buffer Overflows. ✅
+	- Overwriting into adjacent memory. If you know what's there, you can overwrite on purpose. 
+- Directory traversal (prevention). ✅
+	- validate and sanitise user input. Avoid passing user input into to file system APIs if possible. 
+- Remote Code Execution / getting shells. ✅
+	- Look for command injection, send a script that will run on victim machine to create a shell on another computer. Use netcat to listen. 
 
 - Local databases
 	- Some messaging apps use sqlite for storing messages.
@@ -11,6 +16,9 @@
 
 - Windows
 	- Windows registry and group policy. 
+		- Stores information about software, hardware, user preferances, os configs.
+		- How I fixed HDMI on my laptop
+		- TODO: Look more into the difference between them.
 	- Windows SMB. 
 	- Samba (with SMB).
 	- Buffer Overflows. 
