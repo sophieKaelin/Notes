@@ -64,7 +64,12 @@
 
 - MacOS
 	- Gotofail error (SSL).
-	- MacSweeper.
+		- Vuln ~2016
+		- When accessing HTTPS resources using SSL on Iphone, bug in the code where "GoTo Fail" is accidentally written twice. Regardless of result of condition, the second one is always executed.
+		- Skips vital verification steps in ensure a secure connection with SSL
+	- MacSweeper. ❌ (need to read up more on this)
+		- "scans for vulnerabilities and reports" -> these reports are exaggerated/fake
+		- Just a big scam 
 	- Research Mac vulnerabilities.
 
 - Local databases
