@@ -10,33 +10,66 @@
 - Remote Code Execution / getting shells. ✅
 	- Look for command injection, send a script that will run on victim machine to create a shell on another computer. Use netcat to listen. 
 
-- Local databases
-	- Some messaging apps use sqlite for storing messages.
-	- Useful for digital forensics, especially on phones.
-
-- Windows
+- Windows ✅
 	- Windows registry and group policy. 
 		- Stores information about software, hardware, user preferances, os configs.
 		- How I fixed HDMI on my laptop
-		- TODO: Look more into the difference between them.
+		- Group policy mandated by management for a group, windows registry is for personal user. Group policy influences registry.
 	- Windows SMB. 
+		- Server Message Block
+		- File sharing between hosts on a network (1.0 is vulnerable, wannacry)
 	- Samba (with SMB).
+		- Connection between OS (Linux to Windows) (or any unix based system really)
+		- reimplementation of SMB	
 	- Buffer Overflows. 
-	- ROP. 
+	- ROP. ❌ (still unsure how this works(
+		- Return oriented Programming
+		- Like stack smashing -> defence, make it non-executable
+		- Exploit even with defences in place
+		- Use existing code to return to something else
 
-- *nix 
+- Unix ✅
 	- SELinux.
+		- Security Enhanced Linux
+		- Security Architecture for linux systems
+		- Admin have more say in access control
+		- AVC (Access Vector Cache) contains cached permissions for subjects/objects (software/files)	
 	- Kernel, userspace, permissions.
+		- Memory is divided into 2 spaces Kernal and User space
+		- Userspace: memory location for all user activity
+		- Kernal has access to all memory, userspace only has access to a portion
+		- provides memory protection
+		- Permissions: read, write and execute. CHMOD allocates permissions. 
 	- MAC vs DAC.
+		- Mandatory vs Discretionary
+		- Mandatory is military grade. Root user determines privledges of all files.
+		- Discretionary is up to the file owner to assign privleges. Less secure but more user friendly. 
 	- /proc
+		- contains runtime system information (not REAL information)
+		- interface to kernel data structures
+		- Ways of getting kernel information for userspace
 	- /tmp - code can be saved here and executed.
+		- Saved here before shutting down.
+		- Backups might be saved here?
+		- Often important files for programs running at that time.
 	- /shadow 
-	- LDAP - Lightweight Directory Browsing Protocol. Lets users have one password for many services. This is similar to Active Directory in windows.
+		- Stores actual encrypted passwords
+		- only readable by root
+	- LDAP 
+		- Lightweight Directory Browsing Protocol
+		- Lets users have one password for many services
+		- Similar to Active Directory in windows.
+		- Can run multiple instances, rather than just the one.
+		- Allows communicatation between other directory servers (LDAP is a way of speaking to AD)
 
 - MacOS
 	- Gotofail error (SSL).
 	- MacSweeper.
 	- Research Mac vulnerabilities.
+
+- Local databases
+	- Some messaging apps use sqlite for storing messages.
+	- Useful for digital forensics, especially on phones.
 
 ## Mitigations 
 - Patching 
