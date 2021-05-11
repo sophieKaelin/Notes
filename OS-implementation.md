@@ -56,7 +56,7 @@
 		- Stores actual encrypted passwords
 		- only readable by root
 	- LDAP 
-		- Lightweight Directory Browsing Protocol
+		- Lightweight Directory Access Protocol
 		- Lets users have one password for many services
 		- Similar to Active Directory in windows.
 		- Can run multiple instances, rather than just the one.
