@@ -17,6 +17,7 @@
 		- Group policy mandated by management for a group, windows registry is for personal user. Group policy influences registry.
 	- Windows SMB. 
 		- Server Message Block
+		- SMB1 is unencrypted
 		- File sharing between hosts on a network (1.0 is vulnerable, wannacry)
 	- Samba (with SMB).
 		- Connection between OS (Linux to Windows) (or any unix based system really)
