@@ -177,5 +177,8 @@
 	- Checksum
 
 - Broadcast domains and collision domains. 
-- Root stores
+- Root stores ✅
+	- Contains list of all trusted root CA certificates
+	- CA is certificate authority
+	- Can be distributed along software
 - CAM table overflow
