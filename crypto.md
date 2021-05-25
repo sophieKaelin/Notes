@@ -3,6 +3,11 @@
 - Encryption vs Encoding vs Hashing vs Obfuscation vs Signing
 	- Be able to explain the differences between these things. 
 	- [Various attack models (e.g. chosen-plaintext attack)](https://en.wikipedia.org/wiki/Attack_model).
+	- Encryption can involve hashing, signing etc. Process of altering information for sending
+	- Encoding, converting symbols to a different value (e.g. " %22 in URL-encoding)
+	- Hashing, for passwords. Irreversable. Hash the same value to determine if the same.
+	- Obfuscation, making things more difficult to read. The values are still the same, just represented in a more complex way that is not readable to the human eye/takes some time to process.
+	- Signing, using an individuals private key to sign a message for non-repudation and integrity of messages.
 
 - Encryption standards + implementations
 	- [RSA (asymmetrical)](https://en.wikipedia.org/wiki/RSA_(cryptosystem)).
@@ -11,8 +16,8 @@
 	- [Chacha/Salsa (symmetric)](https://en.wikipedia.org/wiki/Salsa20#ChaCha_variant).
 
 - Asymmetric vs symmetric
-	- Asymmetric is slow, but good for establishing a trusted connection.
-	- Symmetric has a shared key and is faster. Protocols often use asymmetric to transfer symmetric key.
+	- Asymmetric is slow, but good for establishing a trusted connection. Private and Public Key
+	- Symmetric has a shared key and is faster. Protocols often use asymmetric to transfer symmetric key. (one key)
 	- Perfect forward secrecy - eg Signal uses this.
 
 - Cyphers
