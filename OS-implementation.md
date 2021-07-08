@@ -23,11 +23,19 @@
 		- Connection between OS (Linux to Windows) (or any unix based system really)
 		- reimplementation of SMB	
 	- Buffer Overflows. 
-	- ROP. ❌ (still unsure how this works(
+	- ROP. ❌ (still unsure how this works)
 		- Return oriented Programming
 		- Like stack smashing -> defence, make it non-executable
 		- Exploit even with defences in place
 		- Use existing code to return to something else
+	- Active Directory
+		- db with users, computers, GPO's (how things interact in network), ACL (permissions on files)
+		- Domain Joined machine means it uses the AD settings.
+	- DC (Domain Controller)
+		- Has the db for the AD for a network
+		- Centre of a network
+		- You can have multiple (there is one primary DC)
+		- Domain Admin (DA) can alter this -> control of this means compromise the whole network.
 
 - Unix ✅
 	- SELinux.
