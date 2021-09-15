@@ -33,6 +33,9 @@
 	- Trust systems: TODO
 	- Super important to learn this, includes learning about handshakes, encryption, signing, certificate authorities, trust systems. [A good primer on all these concepts and algorithms](https://english.ncsc.nl/publications/publications/2019/juni/01/it-security-guidelines-for-transport-layer-security-tls) is made available by the Dutch cybersecurity center.
 	- Various attacks against older versions of SSL/TLS (with catchy names) on [Wikipedia](https://en.wikipedia.org/wiki/Transport_Layer_Security#Attacks_against_TLS/SSL).
+	- To view info on SSL/TLS certs use sslscan or sslyze
+		- use sslyze if you need to use your system proxy settings (sslscan wont support proxies)
+	- Trust TLS1.2 and 1.3 only.
 
 - OSI Model
 	- Application; layer 7 (and basically layers 5 & 6) (includes API, HTTP, etc).
